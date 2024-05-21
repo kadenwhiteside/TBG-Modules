@@ -1,0 +1,25 @@
+# Main Import Module - Kaden Whiteside
+# May 16, 2024
+
+# This establishes the use of modules for this project by importing an 'os'
+# This is a directory, it's created by using os.mkdir()
+
+import os
+
+# Define the main project directory and subdirectories
+project_directory = "rpg_game"
+subdirectories = ["modules"]
+
+# Create the main project directory
+try:
+    os.mkdir(project_directory)
+    print(f"Directory '{project_directory}' created successfully")
+except FileExistsError:
+    print(f"Directory '{project_directory}' already exists")
+
+# Create subdirectories
+for subdirectory in subdirectories:
+    path = os.path.join(project_directory, subdirectory)
+    os.makedirs(path, exist_ok=True)
+    print(f"Directory '{path}' created successfully")
+
