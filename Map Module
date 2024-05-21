@@ -1,0 +1,24 @@
+# map_module.py - Kaden Whiteside
+# May 16, 2024
+
+# This displays my best attempt at a "map"
+# At the very least it shows all the locations in my TBG
+
+def create_map():
+    """Makes a "map" for the game. All this function really does is display
+    all the locations in the game, it's not an actual map."""
+    game_map = [
+        ["Tent", "Safe Trail", "Dangerous Trail"],
+        ["Campsite", "Dark Trail", "Bear Den"],
+        ["Cliff", "Forest", "Marrr's Lair"]
+    ]
+    return game_map
+
+def print_map(game_map):
+    for row in game_map:
+        print(" | ".join(row))
+
+if __name__ == "__main__":
+    game_map = create_map()
+    print_map(game_map)
+
