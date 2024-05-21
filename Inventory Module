@@ -1,0 +1,24 @@
+# inventory_module.py - Kaden Whiteside
+# May 16, 2024
+
+# This module displays the inventory of the main character (the user)
+# The user is the only character with an inventory in my game too
+
+inventory = {
+    "consumables": ["Bread with honey butter", "Water", "Steak", "Baked potato"],
+    "utilities": ["Flashlight", "Hiking shoes", "Sneakers"],
+    "pants": ["Jeans", "Joggers", "Sweatpants"]
+}
+
+def print_inventory():
+    """This function prints out the inventory for the game. That inventory
+    belongs to the main character/user."""
+    for category, items in inventory.items():
+        print(f"{category.capitalize()}:")
+        for item in items:
+            print(f"  - {item}")
+    print()
+
+if __name__ == "__main__":
+    print_inventory()
+
