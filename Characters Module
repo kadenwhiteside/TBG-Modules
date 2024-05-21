@@ -1,0 +1,30 @@
+# character_module.py - Kaden Whiteside
+# May 17, 2024
+
+# This module goes over and prints out the main character and the other -
+# -"good characters" from the TBG
+
+main_character = {
+    "name": "Player",
+    "inventory": [],
+    "location": "Tent"
+}
+
+supporting_characters = {
+    "Dog": "Your dog is who you are trying to find.",
+    "Bungus the Lion": "A friendly lion willing to help you find your dog if you find him."
+}
+
+def print_characters():
+    """Prints the characters aside from the "enemies"."""
+    print("Main Character:")
+    for key, value in main_character.items():
+        print(f"  {key.capitalize()}: {value}")
+    print("\nSupporting Characters:")
+    for name, description in supporting_characters.items():
+        print(f"  {name}: {description}")
+    print()
+
+if __name__ == "__main__":
+    print_characters()
+
