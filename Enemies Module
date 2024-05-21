@@ -1,0 +1,21 @@
+# enemies_module.py - Kaden Whiteside
+# May 17, 2024
+
+# Prints out the "enemies" from the TBG
+# Follows the exact same process as the previous module, just shorter
+
+enemies = {
+    "Bear": "The scariest creature in the forest, the big boss.",
+    "Marrr the Tiger": "Dangerous and loves to play dangerous games."
+}
+
+def print_enemies():
+    """Prints out the enemies in the TBG."""
+    print("Enemies:")
+    for name, description in enemies.items():
+        print(f"  {name}: {description}")
+    print()
+
+if __name__ == "__main__":
+    print_enemies()
+
